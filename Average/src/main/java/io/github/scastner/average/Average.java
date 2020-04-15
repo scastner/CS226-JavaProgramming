@@ -28,8 +28,8 @@ public class Average {
      */
     public static void main(String[] args) {
         Average avg = new Average();
-        avg.RequestInputs(6);
-        avg.CalculateAndPrintAverage();
+        avg.requestInputs(6);
+        avg.calculateAndPrintAverage();
     }
 
     /**
@@ -44,7 +44,7 @@ public class Average {
      *
      * @param numberOfInputs Number of integers to request from the user
      */
-    public void RequestInputs(int numberOfInputs) {
+    public void requestInputs(int numberOfInputs) {
         // Create an instance of the Scanner class using the system input stream
         Scanner scanner = new Scanner(System.in);
 
@@ -73,7 +73,7 @@ public class Average {
     /**
      * Calculates the average for all input integers and prints the result
      */
-    public void CalculateAndPrintAverage() {
+    public void calculateAndPrintAverage() {
         // Sum of all inputs, used to calculate the average
         int sum = 0;
 

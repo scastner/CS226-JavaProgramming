@@ -6,8 +6,20 @@ plugins {
 group 'io.github.scastner'
 version '1.0.0'
 
+ext {
+    javaMainClass = 'io.github.scastner.average.Average'
+}
+
+application {
+    mainClassName = javaMainClass
+}
+
+run {
+    standardInput = System.in
+}
+
 jar {
     manifest {
-        attributes('Main-Class': 'io.github.scastner.average.Average')
+        attributes('Main-Class': javaMainClass)
     }
 }
